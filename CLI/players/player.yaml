@@ -1,0 +1,24 @@
+name: Plr
+type: player
+hp: 20
+ac: 15
+init: +2
+saves:
+  str: 0
+  dex: +4
+  con: 0
+  int: -1
+  wis: +2
+  cha: 0
+actions:
+  sword:
+    type: attack
+    damage: 1d6+3
+    modifier: 5
+  spell:
+    type: save
+    dc: 15
+    save_type: str
+    damage: 2d12
+    options:
+      - half_on_succeed
